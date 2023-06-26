@@ -1,0 +1,64 @@
+words,
+words:before,
+words:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.wrapper{
+    box-sizing: content-box;
+
+    height:70px;
+    display: flex;
+    font-size: 3.1rem;
+
+}
+.words{
+    overflow: hidden;
+}
+.words span{
+    display: block;
+    height: 100%;
+    padding-left: 15px;
+    color:#7addf6;
+    animation: spin_words 10s infinite;
+    text-align: left;
+}
+@keyframes spin_words{
+    6%{
+    }
+    20%{
+        transform: translateY(-00%);
+    }
+    26%{
+        transform: translateY(-112%);
+    }
+    40%{
+        transform: translateY(-100%);
+    }
+    46%{
+        transform: translateY(-212%);
+    }
+    60%{
+        transform: translateY(-200%);
+    }
+    66%{
+        transform: translateY(-312%);
+    }
+    80%{
+        transform: translateY(-300%);
+    }
+    86%{
+        transform: translateY(-412%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+    100%{
+        transform: translateY(-0%);
+    }
+}
