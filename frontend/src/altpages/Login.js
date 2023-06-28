@@ -102,21 +102,12 @@ const ComponentA = props => {
       }
     ).then(function(res) {
       props.setuser(true);
-      navigate("/home");
+      navigate("/");
     }).catch(function(error) {console.log(error)})
     ;
   }
 
-  function submitLogout(e) {
-    e.preventDefault();
-    client.post(
-      "/api/logout",
-      {withCredentials: true}
-    ).then(function(res) {
-      props.setuser(false);
-      navigate("/");
-    });
-  }
+
 
   let logoLinkUrl = ""
   let illustrationImageSrc = illustration

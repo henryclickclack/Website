@@ -440,7 +440,7 @@ export const mockLineData = [
         y: 101,
       },
       {
-        x: "helicopter",
+        x: "airplane",
         y: 75,
       },
       {
@@ -1281,3 +1281,175 @@ export const mockGeographyData = [
     value: 171135,
   },
 ];
+var d = new Date();
+d.setDate(d.getDate()-12);
+let l = []
+for (let i = 0; i < 12; i++) {
+  l.push(new String((d.getDate()+"."+(d.getMonth()+1))))
+  d.setDate(d.getDate()+1);
+}
+console.log(l)
+export const mockLineData2 = [
+  {
+    id: "Zapier",
+    color: tokens("dark").greenAccent[500],
+    data: [
+      {
+        x: l[0],
+        y: 101,
+      },
+      {
+        x: l[1],
+        y: 75,
+      },
+      {
+        x: l[2],
+        y: 36,
+      },
+      {
+        x:l[3],
+        y: 216,
+      },
+      {
+        x: l[4],
+        y: 35,
+      },
+      {
+        x: l[5],
+        y: 236,
+      },
+      {
+        x: l[6],
+        y: 88,
+      },
+      {
+        x:l[7],
+        y: 232,
+      },
+      {
+        x: l[8],
+        y: 281,
+      },
+      {
+        x:l[9],
+        y: 1,
+      },
+      {
+        x:l[10],
+        y: 35,
+      },
+      {
+        x: l[11],
+        y: 14,
+      },
+    ],
+  },
+  {
+    id: "API",
+    color: tokens("dark").blueAccent[300],
+    data: [
+      {
+        x: l[0],
+        y: 212,
+      },
+      {
+        x: l[1],
+        y: 190,
+      },
+      {
+        x: l[2],
+        y: 270,
+      },
+      {
+        x:l[3],
+        y: 9,
+      },
+      {
+        x: l[4],
+        y: 75,
+      },
+      {
+        x:l[5],
+        y: 175,
+      },
+      {
+        x:l[6],
+        y: 175,
+      },
+      {
+        x: l[7],
+        y: 33,
+      },
+      {
+        x:l[8],
+        y: 189,
+      },
+      {
+        x: l[9],
+        y: 97,
+      },
+      {
+        x:l[10],
+        y: 87,
+      },
+      {
+        x:l[11],
+        y: 299,
+      },
+    ],
+  },
+  {
+    id: "UI Path",
+    color: tokens("dark").redAccent[200],
+    data: [
+      {
+        x: l[0],
+        y: 191,
+      },
+      {
+        x: l[1],
+        y: 136,
+      },
+      {
+        x: l[2],
+        y: 91,
+      },
+      {
+        x:l[3],
+        y: 190,
+      },
+      {
+        x: l[4],
+        y: 211,
+      },
+      {
+        x: l[5],
+        y: 211,
+      },
+      {
+        x:l[6],
+        y: 152,
+      },
+      {
+        x: l[7],
+        y: 189,
+      },
+      {
+        x:l[8],
+        y: 152,
+      },
+      {
+        x: l[9],
+        y: 8,
+      },
+      {
+        x:l[10],
+        y: 197,
+      },
+      {
+        x:l[11],
+        y: 107,
+      },
+    ],
+  },
+]
